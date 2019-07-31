@@ -96,7 +96,7 @@ export default class App extends React.Component {
     let okay = true;
     let errorMessage = '';
 
-    if(response.data.Status !== 'Success') {
+    if(action.value === 'create' && response.data.Status !== 'Success') {
       okay = false;
       errorMessage = response.data.Reason;
     }
@@ -232,7 +232,7 @@ export default class App extends React.Component {
           <span>Email here</span>
         </li>
         <li>
-          <input type='submit' />
+          <input type='submit' value='Create'/>
         </li>
       </ul>
     </form>
@@ -299,7 +299,7 @@ export default class App extends React.Component {
           <span>Customer Email here</span>
         </li>
         <li>
-          <input type='submit' />
+          <input type='submit' value='Create'/>
         </li>
       </ul>
     </form>
