@@ -5,22 +5,22 @@ import './App.css';
 const INITIAL_PARTNER_FORM_CONTROLS = {
   name: {
     value: '',
-    placeholder: 'aviatrix',
+    placeholder: 'example',
     required: true
   },
   action: {
     value: '',
-    placeholder: 'create',
+    placeholder: 'create/delete',
     required: true
   },
   domain: {
     value: '',
-    placeholder: 'aviatrix.com',
+    placeholder: 'example.com',
     required: true
   },
   email: {
     value: '',
-    placeholder: 'samg@aviatrix.com',
+    placeholder: 'example@example.com',
     required: true
   }
 };
@@ -28,27 +28,27 @@ const INITIAL_PARTNER_FORM_CONTROLS = {
 const INITIAL_USER_FORM_CONTROLS = {
   action: {
     value: '',
-    placeholder: 'create',
+    placeholder: 'create/delete',
     required: true
   },
   domain: {
     value: '',
-    placeholder: 'jelecos.com',
+    placeholder: 'example.com',
     required: true
   },
   customer_name: {
     value: '',
-    placeholder: 'Aviatrix IO',
+    placeholder: 'Example',
     required: true
   },
   customer_domain: {
     value: '',
-    placeholder: 'aviatrix.io',
+    placeholder: 'example',
     required: true
   },
   customer_email: {
     value: '',
-    placeholder: 'samg@aviatrix.com',
+    placeholder: 'example@example.com',
     required: true
   }
 };
@@ -255,7 +255,7 @@ export default class App extends React.Component {
           <span> Action here</span>
         </li>
         <li>
-          <label htmlFor='domain'>Domain</label>
+          <label htmlFor='domain'>Partner Domain</label>
           <input 
             type='text' 
             name='domain'
@@ -263,7 +263,7 @@ export default class App extends React.Component {
             placeholder={this.state.userFormControl.domain.placeholder}
             required={this.state.userFormControl.domain.required}
             onChange={this.userHandleChange} />
-          <span>Domain here</span>
+          <span>Partner Domain here</span>
         </li>
         <li>
           <label htmlFor='customer_name'>Customer Name</label>

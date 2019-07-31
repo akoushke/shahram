@@ -124,6 +124,12 @@ select:focus {
   color: #D2E2FF;
 }
 
+.response button:hover {
+  background: #6B9FFF;
+  color:#fff;
+  cursor: pointer;
+}
+
 .form {
   display: flex;
   max-width: 400px;
@@ -189,7 +195,7 @@ h1 {
   border: none;
   height: 25px;
   line-height: 25px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -232,4 +238,13 @@ h1 {
 .form input[type="button"]:hover{
   background: #6B9FFF;
   color:#fff;
+  cursor: pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(156, 153, 153);
+  opacity: 1; /* Firefox */
 }
